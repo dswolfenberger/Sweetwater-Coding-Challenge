@@ -32,7 +32,7 @@ function handleFileChange(event) {
 
   selectedFileName.value = file
     ? file.name
-    : 'No files chosen...'
+    : 'No file chosen...'
 }
 </script>
 
@@ -124,7 +124,7 @@ This component displays the inputs for users to add new reviews and ratings.
             aria-describedby="review-image-label"
             @click="selectFile"
           >
-            Select Files
+            Select File
           </button>
 
           <span
@@ -137,9 +137,7 @@ This component displays the inputs for users to add new reviews and ratings.
         </div>
       </div>
 
-      <button type="submit">
-        Submit Review
-      </button>
+      <button type="submit">Submit Review</button>
     </form>
   </section>
 </template>
@@ -170,7 +168,8 @@ This component displays the inputs for users to add new reviews and ratings.
     display: grid;
     gap: 0.25rem;
     margin-bottom: 1.25rem;
-
+    min-width: 0;
+    
     textarea {
       height: 6rem;
     }
@@ -195,6 +194,7 @@ This component displays the inputs for users to add new reviews and ratings.
     display: flex;
     gap: 1rem;
     padding:0.5rem;
+    min-width: 0;
     border: 1px solid $color-border;
     border-radius: $radius-md;
     background: $color-background;
@@ -232,6 +232,8 @@ This component displays the inputs for users to add new reviews and ratings.
     justify-content: center;
     padding: 0 1rem;
     overflow: hidden;
+    flex: 1 1 auto;
+    min-width: 0;
     color: $color-muted;
     font-size: 1rem;
     font-weight: 500;
