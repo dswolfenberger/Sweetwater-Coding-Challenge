@@ -1,0 +1,40 @@
+//Using the Sweetwater (SW) brand guide and the provided prototype, I created a variables file so that styles used by multiple components or pages can be kept clean and consistent
+
+//SW Colors
+$sw-blue: #245BE8;
+$sw-blue-hover: #1742D0;
+$sw-red: #d62932;
+$sw-black: #2e2e2d;
+
+//text colors
+$color-text: #111111;
+$color-text-inverted: #ffffff;
+
+// The original muted color didn't pass contrast tests, darkened for better UX
+$color-muted: #666666;
+$color-border: #d7d7d7;
+$color-card: #f6f6f6;
+$color-background: #ffffff;
+$color-lightbox-background:#000000b8;
+$color-star: #f5a400;
+$color-star-empty: #c9c9c9;
+$color-file-button:#f6f6f6;
+$color-file-button-hover: #f3f3f3;
+
+
+//Radius
+$radius-x-sm:2px;
+$radius-sm: 5px;
+$radius-md: 6px;
+$radius-lg: 15px;
+$radius-x-lg: 20px;
+
+//Spacing
+$space-sm: 0.5rem;
+$space-md: 1rem;
+$space-lg: 1.5rem;
+$space-xl: 2rem;
+
+//Focus state styling
+$focus-border: 2px;
+$focus-border-offset: 2px;
