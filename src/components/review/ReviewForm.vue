@@ -208,11 +208,10 @@ This component displays the inputs for users to add new reviews and ratings.
     max-width:10rem;
     margin: 0;
     padding: $space-md;
-    border: 1px solid $color-border;
+    border: 1.2px solid $color-border;
     border-radius: $radius-sm;
     background: $color-file-button;
     color: $color-text;
-    font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
 
