@@ -79,7 +79,23 @@ In the instance I was working on a live environment with designers, I would choo
 
 ### Expandable Review Content
 
-I noticed the truncated review text in the design was controlled with a **Read more** text link. I saw that the button wasn't styled appropriately to accesible standards. I decided to adjust the control with an underline so users can easily recognize that it's an interactive button. This was not based on an assumption, but rather on proper accessibility standards. https://webaim.org/techniques/hypertext/link_text
+I noticed the truncated review text in the design was controlled with a **Read more** text link. I saw that the button wasn't styled appropriately to accesible standards. I decided to adjust the control with an underline so users can easily recognize that it's an interactive button. This was not based on an assumption, but rather on proper accessibility standards.
+
+- [WebAIM: Link Text](https://webaim.org/techniques/hypertext/link_text)
+
+### Select Files button
+
+After I built the entire review experience from the prototype, I decided to spend dedicated time fixing the file selector so it matched what was provided. Originally, when I tried adding tags to adjust the styling, I wasn't able to change the native input field. I did some research using predictive text on google, scanned devdocs.io, stack overflow and vue/mdn documentation in those spaces. I continued facing the problem and was not making progress.
+
+I used chatgpt to break through this problem and learn how to implement a fix for this in future development projects. I learned that I can keep the native input and its existing structure, but hide it so that I could use Vue templates to build a custom button. After I learned how to implement this into my existing code, without changing the established experience, it allowed me to match the styling to the prototype.
+
+Documents, links and forums I read through:
+
+- [Vue: Template Refs](https://vuejs.org/guide/essentials/template-refs.html)
+- [MDN: File Input](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/file)
+- [MDN: HTMLInputElement `files` Property](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/files)
+- [Stack Overflow: Bind File Input to a Button Using Vue.js](https://stackoverflow.com/questions/37535657/bind-file-input-to-a-button-using-vue-js)
+- [Stack Overflow: Styling an Input Type File Button](https://stackoverflow.com/questions/572768/styling-an-input-type-file-button)
 
 ### Review Image Lightbox
 
