@@ -18,11 +18,6 @@ const shouldTruncate = computed(() => {
   return props.review.description && props.review.description.length > 200
 })
 
-// calls user name attached to review and adds alt text to it
-const imageAltText = computed(() => {
-  return `An image of the product that's attached to ${props.review.user}'s review`
-})
-
 function toggleExpanded() {
   isExpanded.value = !isExpanded.value
 }

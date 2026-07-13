@@ -2,23 +2,33 @@
 
 In this project I recreated the product review experience that was provided. The Sweetwater prototype was a static figma file that I translated into a responsive, data-driven front-end experience.
 
-The challenge could have been completed with HTML, CSS, and JavaScript alone. But instead, I chose to use **Vite, Vue, and SCSS** so that I could demonstrate how I approach reusable component development, structured styling, and interface decisions within a modern workflow. I chose to use VS Code as my IDE because it's my primary development environment that I'm famliar with, and I used Git to prepare the final project for the final review.
+The challenge could have been completed with HTML, CSS, and JavaScript alone. But instead, I chose to use **Vite, Vue, and SCSS** so that I could demonstrate how I approach reusable component development, structured styling, and interface decisions within a modern workflow. I chose to use VS Code as my IDE because it's my primary development environment that I'm familiar with, and I used Git to prepare the final project for the final review.
 
 ## Running the Project
 
 ### Requirements
 
-- Node.js
-- npm
+Before downloading and running the project, ensure the following are installed on your machine:
+
+- Git
+- Node.js (includes npm)
 
 ### Setup
 
+Open a terminal and navigate to the folder where you would like to save the project. Then run the following commands:
+
 ```bash
+git clone https://github.com/dswolfenberger/Sweetwater-Coding-Challenge.git
+cd Sweetwater-Coding-Challenge
 npm install
 npm run dev
 ```
 
-Once the terminal commands are ran, paste the local URL from the terminal into a browser.
+The `npm install` command installs all required project dependencies, including Vue, Vite, and Sass.
+
+Once the development server starts, open the local URL displayed in the terminal in your web browser (typically `http://localhost:5173/`).
+
+To stop the development server, return to the terminal and press `Ctrl/Control + C`
 
 ## Tech Stack
 
@@ -62,11 +72,11 @@ I added a star rating radio selector input to the form, so the output review sup
 
 ### Alignment
 
-Right when I looked at the protoype provided to me, I noticed general alignment issues around the project, not only with the equalness in the spacing between the review form, but also between the existing reviews, I established a spacing format and used that to ensure the project was aligned. Along with this I saw that the font was positioned lower within the buttons, which led me to beleive it could have been an issue with padding, or even font alignment in the existing figma style guide structures. I used my UX thinking to formulate an assumption that this was not intentional and the buttons and fonts should be aligned both vertically and horizontally.
+Right when I looked at the prototype provided to me, I noticed general alignment issues around the project, not only with the equalness in the spacing between the review form, but also between the existing reviews, I established a spacing format and used that to ensure the project was aligned. Along with this I saw that the font was positioned lower within the buttons, which led me to believe it could have been an issue with padding, or even font alignment in the existing figma style guide structures. I used my UX thinking to formulate an assumption that this was not intentional and the buttons and fonts should be aligned both vertically and horizontally.
 
 ### Variable styling
 
-I established from the start to keep a consistent style system, this helped avoid several inconsitencies in the provided prototype that I noticed.
+I established from the start to keep a consistent style system, this helped avoid several inconsistencies in the provided prototype that I noticed.
 A few of the alignment issues I saw were on the form, the button text and the headers were misaligned, so in my styling, I made sure to align the form and the inputs/buttons/titles properly.
 
 ### Brand Color Selection
@@ -79,7 +89,7 @@ In the instance I was working on a live environment with designers, I would choo
 
 ### Expandable Review Content
 
-I noticed the truncated review text in the design was controlled with a **Read more** text link. I saw that the button wasn't styled appropriately to accesible standards. I decided to adjust the control with an underline so users can easily recognize that it's an interactive button. This was not based on an assumption, but rather on proper accessibility standards.
+I noticed the truncated review text in the design was controlled with a **Read more** text link. I saw that the button wasn't styled appropriately to accessible standards. I decided to adjust the control with an underline so users can easily recognize that it's an interactive button. This was not based on an assumption, but rather on proper accessibility standards.
 
 - [WebAIM: Link Text](https://webaim.org/techniques/hypertext/link_text)
 
@@ -99,11 +109,11 @@ Documents, links and forums I read through:
 
 ### Review Image Lightbox
 
-In my project I decided to adjust the design so that review images ccould be opened in a lightbox. This allows users to see the product photos that others added in their reviews in a larger size without leaving the page. I used AI to develop this feature since it wasn't clearly included in the prototype provided, this allowed me to stay on track with the overall development. I included this adjustment to show my UX thinking outside of standard considerations.
+In my project I decided to adjust the design so that review images could be opened in a lightbox. This allows users to see the product photos that others added in their reviews in a larger size without leaving the page. I used AI to develop this feature since it wasn't clearly included in the prototype provided, this allowed me to stay on track with the overall development. I included this adjustment to show my UX thinking outside of standard considerations.
 
 ### Text Area Resizing
 
-The review text area was originally allowing user to expand vertically and horizontally. In my code I chose to restrict horizontal adjsutments and give users control over the input height, keeping them from adjusting the form in a way that breaks the overall page layout.
+The review text area was originally allowing user to expand vertically and horizontally. In my code I chose to restrict horizontal adjustments and give users control over the input height, keeping them from adjusting the form in a way that breaks the overall page layout.
 
 ## Accessibility Considerations
 
@@ -129,11 +139,11 @@ I wasn't happy with the final experience and decided to restructure the componen
 
 Since the email specified that a header and footer navigation element wasn't needed for this project, those elements were excluded from the overall structure, and the form doesn't include the ability to submit new reviews.
 
-Where inconsistencies the prototype were presented, I made a reasoned front-end focused assumptions and documented the prioritized adjustment around it rather than assuming the prototype was the final say. This attention to detail helped make indentifying the styles easier to in teh event adjustments to the assumption need to be made.
+Where inconsistencies in the prototype were presented, I made reasoned front-end focused assumptions and documented the adjustment around it, rather than assuming the prototype was the final say. This attention to detail made identifying the styles easier, in the event that adjustments to my assumption need to be made.
 
 ## Tools and Research
 
-In the project I used a hadnful of resources during development:
+In the project I used a handful of resources during development:
 
 - official Vite, Vue and SCSS documentation (as well as devdocs.io)
 - browser developer tools (inspect element, debug, wave accessibility tool and Chrome VoiceOver)
